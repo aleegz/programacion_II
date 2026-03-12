@@ -1,0 +1,45 @@
+|
+├──config/
+|    └── jwt.php
+|
+├── public/
+│   ├── .htaccess
+│   └── index.php
+|
+├── src/
+|    |
+|    ├──Database/
+|    |    └── connection.php
+|    |
+|    ├── Helpers/
+|    │   ├── ResponseHelper.php
+|    │   └── AuthHelper.php
+|    |
+|    ├── Middleware/
+|    │   ├── JwtMiddleware.php
+|    │   ├── AuthMiddleware.php
+|    │   └── RoleMiddleware.php
+|    |
+|    ├── Models/
+|    │   ├── products.php
+|    │   └── users.php
+|    |
+|    ├── Products/
+|    │   └── productController.php ← CRUD de productos (solo admins)
+|    │
+|    ├── Users/
+|        ├── login.php
+|        ├── signup.php
+|        └── userController.php ← CRUD de usuarios (solo admins)
+|
+├── vendor/
+|   ├── autoload.php
+|   └── * otros archivos *
+|
+├── .env
+|
+├── .htaccess
+|
+├── composer.json
+|
+└── composer.lock

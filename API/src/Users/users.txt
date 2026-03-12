@@ -1,0 +1,29 @@
+{
+  "username": "admin",
+  "email": "admin@admin.com",
+  "password": "admin",
+  "role": "admin"
+}
+
+{
+  "username": "user",
+  "email": "user@user.com",
+  "password": "user",
+  "role": "user"
+}
+
+{
+  "username": "test",
+  "email": "test@test.com",
+  "password": "test",
+  "role": "test"
+}
+
+INSERT INTO users (username, email, password)
+VALUES ('admin', 'admin@admin', 'admin', 'admin');
+
+INSERT INTO users (username, email, password)
+VALUES ('user', 'user@user', 'user', 'user');
+
+INSERT INTO users (username, email, password)
+VALUES ('test', 'test@test', 'test', 'test');
